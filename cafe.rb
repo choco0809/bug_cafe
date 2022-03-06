@@ -21,7 +21,7 @@ def take_order(menus)
   print '>'
   order_number = gets.to_i
   puts "#{menus[order_number -1][:name]}(#{menus[order_number -1][:price]}円)ですね。"
-  order_number -1
+  order_number -= 1
 end
 
 puts 'bugカフェへようこそ！ご注文は？ 番号でどうぞ'
